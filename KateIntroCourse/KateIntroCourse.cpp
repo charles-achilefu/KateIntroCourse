@@ -34,7 +34,7 @@ int main()
 
 	Account A1;
 	A1.Deposit(90);
-	cout << "After depositing 90$" << endl;
+	cout << "After depositing 90$ Balance = " << A1.GetBalance() << endl;
 	for (auto s : A1.Report())
 	{
 		cout << s << endl;

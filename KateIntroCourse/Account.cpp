@@ -3,10 +3,9 @@
 
 using namespace std;
 
-Account::Account() : Balance(0)
+Account::Account() : Balance(0), Limit(100)
 {
 }
-
 
 std::vector<std::string> Account::Report()
 {
@@ -27,6 +26,8 @@ bool Account::Deposit(int Amt)
 	{
 		Balance += Amt;
 		Log.push_back(Transaction(Amt, "Deposit"));
+		Balance -= 1;
+		Log.push_back(Transaction(1, "Service Charge"));
 		return true;
 	} 
 	else
@@ -39,10 +40,12 @@ bool Account::Withdraw(int Amt)
 {
 	if (Amt >= 0)
 	{
-		if (Balance >= Amt)
+		if (Balance + Limit >= Amt)
 		{
 			Balance -= Amt;
 			Log.push_back(Transaction(Amt, "Withdraw"));
+			Balance -= 1;
+			Log.push_back(Transaction(1, "Service Charge"));
 			return true;
 		} 
 		else

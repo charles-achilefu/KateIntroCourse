@@ -9,6 +9,7 @@ class Account
 private:
 
 	int Balance;
+	int Limit;
 	std::vector<Transaction> Log;
 
 public:
@@ -17,6 +18,6 @@ public:
 	std::vector<std::string> Report();
 	bool Deposit(int Amt);
 	bool Withdraw(int Amt);
-	
+	inline int GetBalance() const { return Balance; };
 };
 
