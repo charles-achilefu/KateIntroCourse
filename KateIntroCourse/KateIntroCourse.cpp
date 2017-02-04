@@ -3,14 +3,29 @@
 
 #include "stdafx.h"
 #include <iostream>
- 
+#include <string> 
+
 using namespace std;
 
-// Functions and Headers
+// Strings and Collections
 
 int main()
 {
-	
+	string WordOne, WordTwo;
+	cin >> WordOne >> WordTwo;
+	// or getline(cin, WordOne); getline(cin, WordTwo);
+	if (WordOne.length() > WordTwo.length())
+	{
+		cout << "WordOne.length() > WordTwo.length()" << endl;
+	} 
+	else if(WordOne.length() < WordTwo.length())
+	{
+		cout << "WordOne.length() < WordTwo.length()" << endl;
+	}
+	else
+	{
+		cout << "WordOne.length() == WordTwo.length()" << endl;
+	}
 
     return 0;
 }
