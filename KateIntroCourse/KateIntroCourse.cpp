@@ -9,6 +9,23 @@ using namespace std;
 
 // Writing Classes
 // Compiler Specific Topics
+
+/// Topics to Learn Later
+/**  
+	- Lots of Syntax
+	- Debugging
+	- Casting
+	- The const keyword
+	- The Standard Library
+	- Passing Parameters
+	- Managing resources
+	- Scope
+	- Exceptions
+	- Free store - memory management (shared_ptr, RAII, Rule of 3, Rule of 5)
+	- Lambdas
+*/
+
+
 /**   
 	#Account
 		- Keeps track of a balance

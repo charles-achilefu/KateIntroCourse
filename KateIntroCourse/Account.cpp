@@ -7,7 +7,7 @@ Account::Account() : Balance(0), Limit(100)
 {
 }
 
-std::vector<std::string> Account::Report()
+std::vector<std::string> Account::Report() const
 {
 	vector<string> Report;
 	Report.push_back("Balance is " + to_string(Balance));

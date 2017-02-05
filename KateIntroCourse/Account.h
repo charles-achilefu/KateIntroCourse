@@ -15,7 +15,7 @@ private:
 public:
 
 	Account();
-	std::vector<std::string> Report();
+	std::vector<std::string> Report() const;
 	bool Deposit(int Amt);
 	bool Withdraw(int Amt);
 	inline int GetBalance() const { return Balance; };

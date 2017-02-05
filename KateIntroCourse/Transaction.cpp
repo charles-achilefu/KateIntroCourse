@@ -8,7 +8,7 @@ Transaction::Transaction(int Amt, std::string Kind) : Amount(Amt), Type(Kind)
 
 }
 
-std::string Transaction::Report()
+std::string Transaction::Report() const
 {
 	string Report;
 	Report += "   ";

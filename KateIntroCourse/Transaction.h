@@ -12,7 +12,7 @@ private:
 public:
 
 	Transaction(int Amt, std::string Kind);
-	std::string Report();
+	std::string Report() const;
 	
 };
 
