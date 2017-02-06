@@ -26,6 +26,18 @@ using namespace std;
 */
 
 
+	/**  Legacy Constructs
+		- Legacy code
+		- Casting
+		- Macros
+		- C Style Arrays
+		- C Style Strings
+		- Printf
+		- Typedef
+		- Pointers
+	*/
+
+
 /**   
 	#Account
 		- Keeps track of a balance
